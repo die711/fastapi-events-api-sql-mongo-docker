@@ -1,0 +1,42 @@
+// git commands
+git init
+git branch -m main
+git add .
+git commit -m 'first commit with initial api'
+git remote add origin https://github.com/die711/fastapi-task-api-auth-pytest.git
+git push origin -u main
+git pull
+
+
+// python, pip commands
+python -m venv .env
+pip freeze  > requirements.txt
+pip install pydantic[email]
+pip install sqlmodel
+pip install beanie
+pip install pydantic_settings
+pip install passlib[bcrypt]
+pip install python-jose
+pip install python-multipart
+pip install pytest
+pip install httpx pytest.asyncio
+pip install -r requirements.txt
+
+
+//book name
+Building Python Web APIs with FastAPI: A fast-paced guide to building high-performance, robust web APIs with very little boilerplate code
+Abdulazeez Abdulazeez Adeshina (Autor)
+
+
+//pytest
+pytest .\tests\
+pytest .\test\test_math_operations.py
+pytest .\test_fixture.py -v
+pytest .\tasks\test\test_user.py::test_logout
+pytest .\tasks\test\test_user.py::test_logout -s
+
+
+//docker commands
+docker pull mongo
+docker-compose up -d
+docker build -t event-planner-api
